@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20170710184251) do
 
   create_table "courses", force: :cascade do |t|
-    t.string "name"
+    tfe.string "name"
     t.integer "prereq_id"
     t.integer "instructor_id"
     t.datetime "created_at", null: false
