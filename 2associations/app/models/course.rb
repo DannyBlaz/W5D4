@@ -12,10 +12,11 @@ class Course < ApplicationRecord
         source: :student
 
     #prerequisite
-    has_many :prerequisites,
+    belongs_to :prerequisite,
         primary_key: :id,
         foreign_key: :prereq_id,
         class_name: :Course
+        optional: ture
 
     #instructor
     belongs_to :instructor,
